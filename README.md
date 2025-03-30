@@ -37,22 +37,6 @@ The code implements CPL-Nets and Contractive Layer variants, trains them on CIFA
 *   Torchvision
 *   NumPy
 *    `autoattack` library (if using the AutoAttack evaluation script directly: `pip install git+https://github.com/fra31/auto-attack`)
-Usage
-Training
-
-To train a model (e.g., CPL-S without LLN), run the main training script (adjust parameters as needed):
-
-python train.py \
-    --model CPLS \ # Or CPLM
-    --dataset cifar10 \
-    --epochs 200 \
-    --batch-size 128 \
-    --lr 0.01 \
-    --margin 1.0 \
-    --use-lln False \ # Set True to use Last Layer Normalization
-    --use-contractive False \ # Set True to use Contractive Layers
-    --contractive-mu 0.1 \ # Mu value if using contractive layers
-    --save-path ./checkpoints/cpls_no_lln
 
 Results Summary
 
@@ -76,6 +60,6 @@ If you find this work useful in your research, please consider citing the thesis
   school       = {Indian Institute of Science},
   year         = {2024},
   address      = {Bengaluru, India},
-  month        = {April}, % Or the submission month
+  month        = {April},
   note         = {Master of Science (Research) Thesis}
 }
